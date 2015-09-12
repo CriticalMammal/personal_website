@@ -1,0 +1,372 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body { 
+    font-family: 'Play',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2em;
+    /*background: rgb(10, 10, 10);*/
+    background-color: #718E9E;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    /*font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Audiowide', "Helvetica", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.page-header {
+    color: #FFFDE6;
+}
+
+.portfolio-item h5, .homepage-item h2 {
+    font-size: 1.3em;
+}
+.portfolio-item h5 a {
+    color: #FFFDE6;
+    /*outline: 1px solid #FFFDE6;*/
+    border-right: 1px solid #FFFDE6;
+    border-bottom: 1px solid #FFFDE6;
+    padding-right: 2px;
+    padding-top: 2px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.portfolio-item h5 a:hover {
+    color: #33332E;
+}
+
+.homepage-head-block {
+    width: 200px;
+    margin: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid white;
+}
+
+.homepage-item-head {
+    border-right: 1px solid #FFFDE6;
+    border-bottom: 1px solid #FFFDE6;
+    padding-right: 2px;
+    padding-top: 2px;
+    line-height: 1.2;
+}
+
+.portfolio-item h5 span, .homepage-item h2 span {
+    font-family: 'Audiowide', "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: block;
+    color: #FFFDE6;
+    text-align: right;
+}
+
+.homepage-item .homepage-item-head {
+    display: inline-block;
+    text-align: left;
+}
+
+.portfolio-item hr, .homepage-item hr {
+    padding: 0;
+    margin: 0 0 1px 0;
+}
+
+.portfolio-item .title {
+    outline: 1px solid #FFFDE6;
+}
+
+.portfolio-item p, .homepage-item p {
+    padding: 6px;
+    border: 1px dashed #EDE6A7;
+}
+
+.brand-before p {
+    color: white;
+}
+
+.brand-main p {
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.2;
+    /*color: rgba(100, 100, 100, 225);*/
+    color: #EDE6A7;
+}
+
+hr {
+    /*max-width: 400px;*/
+    border-color: #FFFDE6;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-main {
+    float: center;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #FFFDE6;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    /*background: #90A4AF;*/
+    background: rgba(144,164,175,0.8);
+}
+
+.intro-text {
+    width: 200px;
+    margin: 30px auto 30px auto;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.top-corners {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.top-left-corner {
+    position: absolute;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    width: 50px;
+    height: 50px;
+    left: 0;
+}
+
+.top-right-corner {
+    position: absolute;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+}
+
+.bottom-corners {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.bottom-left-corner {
+    position: absolute;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    width: 50px;
+    height: 50px;
+    left: 0;
+}
+
+.bottom-right-corner {
+    position: absolute;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    width: 50px;
+    height: 50px;
+    right: 0;
+}
+
+.brand-main a {
+    color: #EDE6A7;
+}
+
+.brand-main a:hover {
+    color: white;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+.img-responsive {
+    width:230px;
+    height: 140px;
+    margin: auto;
+}
+
+footer {
+    background-color: #FFFDE6;
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 1.2em;
+    color: grey;
+}
+
+@media screen and (max-width: 767px) {
+    .brand-main {
+        float: center;
+        margin-right: 5pc;
+        margin-left: 5pc;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        /*text-shadow: 1px 1px 2px rgba(0,0,0,0.5);*/
+        font-family: 'Audiowide',"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 4em;
+        font-weight: 200;
+        line-height: normal;
+        color: #FFFDE6;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        /*text-shadow: 1px 1px 2px rgba(0,0,0,0.5);*/
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #FFFDE6;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background-color: #FFFDE6;
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+
+    .brand-main {
+        float: center;
+        margin-right: 10pc;
+        margin-left: 10pc;
+    }
+}
+
+@media (min-width: 992px) {
+    .brand-main {
+        float: center;
+        margin-right: 15pc;
+        margin-left: 15pc;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .brand-main {
+        float: center;
+        margin-right: 24pc;
+        margin-left: 24pc;
+    }
+}
