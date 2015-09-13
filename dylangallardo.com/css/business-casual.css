@@ -284,6 +284,18 @@ hr {
     margin: auto;
 }
 
+.contact-icons {
+    /*display: inline-block;*/
+    text-align: center;
+}
+
+.img-contact-icon {
+    display: inline-block;
+    width: 115px;
+    height: 70px;
+    margin: auto;
+}
+
 footer {
     background-color: #FFFDE6;
 }
