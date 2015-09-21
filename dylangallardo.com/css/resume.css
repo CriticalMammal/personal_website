@@ -1,9 +1,64 @@
+.education-group h1, .education-group h2, 
+.education-group h3, .education-group h4, 
+.education-group h5, .education-group h6,
+.skill-group h6 {
+    margin: 0 0 5px 0;
+}
+
+p {
+    color: #FFFDE6;
+}
+
+li {
+    list-style-type: square;
+}
+
+#resume-header a {
+    color: #FFFDE6;
+}
+
+#resume-header a:hover {
+    color: #D9D7C3;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.box-text-content {
+    width: 80%;
+    margin: auto;
+}
+
+#resume-education, #resume-skills, #resume-experience {
+    font-size: 1.1em;
+    line-height: 1.2;
+}
+
+.education-details-list,
+.experience-detail-list {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.skill-detail-list li {
+    float: left;
+    width: 200px;
+}
+
+#resume-header {
+    text-align: center;
+}
+
 .resume-dot-pattern {
     z-index: 1;
     position: absolute;
     top: 50%; 
-    left: 0; 
-    /*bottom: 0; */
+    left: 0;
     right: 0;
     width: 100%;
     height: 100%;
@@ -14,3 +69,30 @@
     background-size: contain;
 }
 
+<<<<<<< HEAD
+=======
+.box-text-content {
+    color: #FFFDE6;
+}
+
+.section-head {
+    margin-bottom: 30px;
+}
+
+.education-group .section-split-left {
+    width: 20%;
+}
+.section-split-left {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 100px;
+}
+
+.section-split-right {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+>>>>>>> origin/master
