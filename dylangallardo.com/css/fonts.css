@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Audiowide';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Audiowide-regular/Audiowide-regular.eot');
+  src: url('../fonts/Audiowide-regular/Audiowide-regular.eot?#iefix') format('embedded-opentype'),
+       local('Audiowide'),
+       local('Audiowide-regular'),
+       url('../fonts/Audiowide-regular/Audiowide-regular.woff2') format('woff2'),
+       url('../fonts/Audiowide-regular/Audiowide-regular.woff') format('woff'),
+       url('../fonts/Audiowide-regular/Audiowide-regular.ttf') format('truetype'),
+       url('../fonts/Audiowide-regular/Audiowide-regular.svg#Audiowide') format('svg');
+}

@@ -106,6 +106,7 @@ h6 {
 p {
     font-size: 1.2em;
     line-height: 1.2;
+    letter-spacing: 0.5px;
     /*color: rgba(100, 100, 100, 225);*/
     color: #EDE6A7;
 }
