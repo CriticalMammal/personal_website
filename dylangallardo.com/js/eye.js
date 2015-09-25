@@ -33,8 +33,8 @@ var center = {
   y: $('.eye').height()/2 - r
 };
 var distanceThreshold = $('.eye').width()/2 - r;
-var xp = 45;
-var yp = 55;
+var xp = 45; // 45
+var yp = 55; // 55
 
 // entry point
 window.addEventListener ? 
@@ -42,7 +42,6 @@ window.addEventListener("load",init,false) :
 window.attachEvent && window.attachEvent("onload",init);
 
 function init() {
-  console.log("what's going on?");
   eye = $('.eye');
   eyeColor = eye.css('background-color');
   eyeColor = eyeColor.replace(/[^\d,.]/g, '').split(',');
@@ -83,8 +82,9 @@ function animate() {
     distractionTimer = randomInt(60, 120);
     
     if (distractedFlag == true) {
-      var eyeposx = parseInt(eye.css('left'));
-      var eyeposy = parseInt(eye.css('top'));
+      var eyeRect = $('.eye')[0].getBoundingClientRect();
+      var eyeposx = eyeRect.left;
+      var eyeposy = eyeRect.top;
       var tempX = randomInt((mouse.x+eyeposx+r)-200, (mouse.x+eyeposx+r)+200);
       var tempY = randomInt((mouse.y+eyeposx+r)-200, (mouse.y+eyeposx+r)+100);
 
@@ -221,9 +221,9 @@ function updateEmotions() {
     anger = 0;
   }
   
-  eyeColor[0] = interpolate(eyeColor[0], 245+anger, 0, 0.008);
-  eyeColor[1] = interpolate(eyeColor[1], 240-anger, 0, 0.008);
-  eyeColor[2] = interpolate(eyeColor[2], 240-anger, 0, 0.008);
+  eyeColor[0] = interpolate(eyeColor[0], 255+anger, 0, 0.008);
+  eyeColor[1] = interpolate(eyeColor[1], 253-anger, 0, 0.008);
+  eyeColor[2] = interpolate(eyeColor[2], 230-anger, 0, 0.008);
   eyeColor.forEach(function(element, index) {
     if (eyeColor[index] >= 255) {
       eyeColor[index] = 255;
@@ -238,8 +238,9 @@ function updateEmotions() {
 $(window).mousemove(function(e){
   distractedFlag = false;
   
-  var eyeposx = parseInt($('.eye').css('left'));
-  var eyeposy = parseInt($('.eye').css('top'));
+  var eyeRect = $('.eye')[0].getBoundingClientRect();
+  var eyeposx = eyeRect.left;
+  var eyeposy = eyeRect.top;
   
   var d = {
     x: e.pageX - r - eyeposx - center.x,
@@ -255,6 +256,10 @@ $(window).mousemove(function(e){
     mouse.y = d.y / distance * distanceThreshold + center.y;
   }
   
+
+  // console.log('Mx: ' + e.pageX + ' My: ' + e.pageY);
+  // console.log('Ex: ' + eyeposx + ' Ey: ' + eyeposy);
+
   // make eyelids close more the closer the mouse gets to them
   var lidModifier = (distance/50);
   if (distance > 50) {
