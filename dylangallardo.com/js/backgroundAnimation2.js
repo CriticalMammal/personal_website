@@ -27,7 +27,9 @@ polyGradient.addColorStop(0, "#a8b9ba"); //lightblue
 var springColor = "#7d97a5";
 
 // entry point
-window.onload = main;
+window.addEventListener ? 
+window.addEventListener("load",main,false) : 
+window.attachEvent && window.attachEvent("onload",main);
 
 function main() {
   // soft body vars (I encourage you to play around with these also)
