@@ -5,30 +5,34 @@ vars to control eye movement (without js). Just remove all the js code and tweak
 .eye {
   display: block;
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: auto;
+  width: 148px;
+  height: 148px;
+  margin: 0px auto 25px auto;
   transform: rotate(0deg);
   box-sizing: border-box;
   border-radius: 60%;
   background: #fffde6;
+  box-shadow: 0px 0px 50px 10px #90a4af;
 }
 
-/* line 31, ../scss/eye.scss */
+/* line 32, ../scss/eye.scss */
 .lids {
   box-shadow: inset 0px 0px 40px #718e9e;
   position: absolute;
   border-top: 30px solid #90a4af;
   border-bottom: 20px solid #90a4af;
-  top: -1px;
+  border-left: 2px solid #90a4af;
+  border-right: 2px solid #90a4af;
+  top: -0.8px;
+  left: -0.8px;
   width: 150px;
-  height: 152px;
+  height: 150px;
   border-radius: 60%;
   background: rgba(255, 0, 255, 0);
   box-sizing: border-box;
 }
 
-/* line 45, ../scss/eye.scss */
+/* line 49, ../scss/eye.scss */
 .iris {
   position: absolute;
   width: 60px;
@@ -39,7 +43,7 @@ vars to control eye movement (without js). Just remove all the js code and tweak
   background-color: rgba(113, 142, 158, 0.9);
 }
 
-/* line 56, ../scss/eye.scss */
+/* line 60, ../scss/eye.scss */
 .pupil {
   position: absolute;
   left: 15px;
@@ -48,10 +52,10 @@ vars to control eye movement (without js). Just remove all the js code and tweak
   height: 30px;
   border-radius: 60%;
   background-color: #718e9e;
-  box-shadow: 0px 0px 30px white;
+  box-shadow: 0px 0px 15px 4px white;
 }
 
-/* line 67, ../scss/eye.scss */
+/* line 71, ../scss/eye.scss */
 .pupil-shine {
   position: absolute;
   left: 60%;

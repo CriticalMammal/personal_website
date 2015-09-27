@@ -160,6 +160,23 @@ hr {
     border-color: #FFFDE6;
 }
 
+#console {
+    width: 60%;
+    height: 100px;
+    margin: 0px auto 25px auto;
+    padding: 10px;
+    overflow-y: scroll;
+    border: 1px solid rgba(255, 253, 230, 0.5);; /*#FFFDE6*/
+    background-color: #7d97a5;
+    box-shadow: inset 0px 0px 100px #90A4AF;
+}
+
+#console p {
+    padding: 0px;
+    margin: 0px;
+    color: #FFFDE6;
+}
+
 .box {
     position: relative;
     margin-bottom: 20px;

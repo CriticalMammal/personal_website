@@ -1,4 +1,5 @@
 /* 
+Created by Dylan Gallardo.
 Feel free to modify and use it as you wish, no restrictions. 
 I'd like to hear if it's used anywhere though!
 
