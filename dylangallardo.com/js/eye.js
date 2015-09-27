@@ -314,9 +314,9 @@ $('.lids').click(function() {
   eyeSounds[randomInt(0, eyeSounds.length-1)].play();
 });
 
-$('*').click(function() {
-  skinSounds[randomInt(0, skinSounds.length-1)].play();
-})
+// $('*').click(function() {
+//   skinSounds[randomInt(0, skinSounds.length-1)].play();
+// })
 
 // linearly interpolate from part to goalPos (smooth animation effect)
 function interpolate(part, goalPos, currentLerp, lerpSpeed) {

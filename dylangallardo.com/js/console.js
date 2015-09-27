@@ -23,7 +23,29 @@ function init() {
 	consoleBox = '#console';
 	consoleContent = '#console p';
 
+	createSlider();
 	testTextWrite();
+}
+
+function createSlider() {
+	var slider = document.getElementById('slider');
+	var sliderValue = document.getElementById('slider-value');
+
+	noUiSlider.create(slider, {
+		start: [50], connect: "lower",
+		range: {
+			'min': 0,
+			'max': 100
+		},
+		format: wNumb({
+		decimals: 0,
+		thousand: '.',
+	})
+	});
+
+	slider.noUiSlider.on('update', function( values, handle ){
+		sliderValue.innerHTML = values[handle];
+	});
 }
 
 function testTextWrite() {
