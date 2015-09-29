@@ -244,13 +244,13 @@ $(window).mousemove(function(e){
   var eyeposy = eyeRect.top;
   
   var d = {
-    x: e.pageX - r - eyeposx - center.x,
-    y: e.pageY - r - eyeposy - center.y
+    x: e.clientX - r - eyeposx - center.x,
+    y: e.clientY - r - eyeposy - center.y
   };
   var distance = Math.sqrt(d.x*d.x + d.y*d.y);
   if (distance < distanceThreshold) {
-    mouse.x = e.pageX - eyeposx - r;
-    mouse.y = e.pageY - eyeposy - r;
+    mouse.x = e.clientX - eyeposx - r;
+    mouse.y = e.clientY - eyeposy - r;
   } 
   else {
     mouse.x = d.x / distance * distanceThreshold + center.x;
