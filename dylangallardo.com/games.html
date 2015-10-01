@@ -34,6 +34,12 @@
 </head>
 
 <body>
+    <!-- wrong place for audio tag? -->
+    <audio id="hover-sound">
+      Your browser does not support the <code>audio</code> element.
+      <source src="audio/hover.wav" type="audio/wav">
+    </audio>
+
     <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
     Canvas not supported
     </canvas>
@@ -340,6 +346,8 @@
     
     <!-- Custom Background Animation -->
     <script src="js/backgroundAnimation2.js"></script>
+
+    <script src="js/hoverAudio.js"></script>
 
 </body>
 
