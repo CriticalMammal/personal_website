@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body { 
+body {
     font-family: 'Play',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.2em;
     background-color: #718E9E;
@@ -100,6 +100,10 @@ h6 {
 
 .brand-main p {
     color: #FFFDE6;
+}
+
+.col-lg-12 hr {
+    max-width: 400px;
 }
 
 p {
@@ -203,6 +207,11 @@ hr {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;    
+}
+
+.box #video-player, .box .brand-main {
+    position: relative;
+    z-index: 5;
 }
 
 .box-text-content {
@@ -365,6 +374,14 @@ hr {
     width: 115px;
     height: 70px;
     margin: auto;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 footer {

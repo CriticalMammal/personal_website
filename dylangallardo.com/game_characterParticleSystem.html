@@ -12,14 +12,15 @@
     <title>Dylan Gallardo</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/3-col-portfolio.css" rel="stylesheet"/>
+    <link href="css/business-casual.css" rel="stylesheet"/>
+    <link href="css/flashViewer.css" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Play|Audiowide' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Play|Audiowide' rel='stylesheet' type='text/css'> -->
 
     <!-- Local Fonts (not really necessary in this case) -->
     <link href="css/fonts.css" rel="stylesheet"/>
@@ -81,27 +82,56 @@
         <div class="row">
 
             <div class="box">
+                <div class="top-corners">
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                </div>
 
                 <div class="col-lg-12">
-                    <hr>
                     <h2 class="intro-text text-center">Character Particle System</h2>
-                    <hr>
                 </div>
 
                 <div class="brand-main text-center">
-                    <p> Programmed in Flash from scratch. Allows for animated movement of the basic shapes involved, the particles will adjust accordingly. Not really performance friendly, very taxing with more complex animations.</p><br>
+                    <p> Programmed/animated in Flash from scratch. The particles fill defined rects (body, arms, etc.) dynamically. This is most noticeable when first loading a character, since the particles are initialized randomly and correct their positions over time.</p> 
+                    <p>The characters themselves (the invisible body boundaries being filled with the particles) were animated with Flash motion tweens and whatnot by hand. May be very taxing with some of the more complex scenes.</p><br>
 
-                    <p>Link to the short animation "Long Distance" below. (May have performance issues)</p>
+                    <p>Link to the short animation "Long Distance" below. Created over the span of about a week, along with modifications to the particle system that were needed for it to perform reasonably.</p>
                     <p> <a href="DGallardo_RunningGirlAnimation.html">Long Distance</a></p><br>
+                </div>
 
-                    <p>The individual character gifs are listed below.</p>
+                <div id="content-area">
+                    <!-- Left button -->
+                    <div class="border-button">
+                        <button id="button-left"><img src="img/arrow.png"></img></button>
+                    </div>
+
+                    <!-- Flash Content -->
+                    <div id="flash-content">
+                        <embed src="flash/DGallardo_RunningGirl_Side.swf" align="center" width="100%" height="100%"/>
+                    </div>
+
+                    <!-- Right button -->
+                    <div class="border-button">
+                        <button id="button-right"><img src="img/arrow.png"></img></button>
+                    </div>
+                </div>
+
+                <div class="brand-main text-center">
+                    <p>Individual characters (.gif versions if the flash viewer above doesn't work)</p>
                     <p> <a href="img/Particle_Characters/Character_ZenFella.gif">ZenFella </a></p>
                     <p> <a href="img/Particle_Characters/RunningGirl_Views.gif">Running Girl (views)</a></p>
-                    <p> <a href="img/Particle_Characters/RunningGirl_Side.gif">Running Girl (side)</a></p>
+                    <p> <a href="img/Particle_Characters/RunningGirl.gif">Running Girl (concept)</a></p>
                     <p> <a href="img/Particle_Characters/Character_BigFella.gif">Big Fella</a></p>
                     <p> <a href="img/Particle_Characters/Character_Bill.gif">Bill</a></p>
                     <p> <a href="img/Particle_Characters/Character_TiredGirl.gif">Tired Girl</a></p>
                     <p> <a href="img/Particle_Characters/Character_MagicFella.gif">MagicFella</a></p>
+                </div>
+
+                <div class="box-dot-pattern"></div>
+
+                <div class="bottom-corners">
+                    <div class="bottom-left-corner"></div>
+                    <div class="bottom-right-corner"></div>
                 </div>
             </div>
         </div>
@@ -117,16 +147,21 @@
             </div>
         </div>
     </footer>
-    </div>
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <!-- JS switches flash content on button click -->
+    <script src="js/flashViewer.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Background Animation -->
-    <script src="js/backgroundAnimation2.js"></script>
+    <!-- <script src="js/backgroundAnimation2.js"></script> -->
 </body>
 
 </html>

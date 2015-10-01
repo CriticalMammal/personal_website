@@ -1,0 +1,85 @@
+html, body {
+	height: 100%;
+	/*background-color: #323A3B;*/
+}
+
+#content-area {
+	position: relative;
+	/*width: 80%;*/
+	height: 600px;
+	margin: 0px auto 25px auto;
+	z-index: 5;
+}
+
+#flash-content {
+	display: inline-block;
+	position: relative;
+	width: 800px;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+}
+
+.border-button {
+	display: inline-block;
+	height: 100%;
+	width: 100px;
+}
+
+.border-button:first-child img {
+	width: 100%;
+	height: 20%;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.border-button:last-child img {
+	width: 100%;
+	height: 20%;
+}
+
+.border-button:first-child {
+	margin-left: 65px;
+}
+
+#button-left, #button-right {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 253, 230, 0);
+	/*background-color: #718E9E;*/
+	border: 1px solid rgba(255, 253, 230, 0.5);
+	transition: background-color 0.2s ease-in-out;
+}
+
+#button-left:hover, #button-right:hover {
+	background-color: rgba(255, 253, 230, 0.5);
+}
+
+/*@media screen and (max-width: 767px) {
+	#flash-content{
+		width: 100%;
+		height: 400px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	#flash-content {
+		width: 80%;
+		height: 600px;
+	}
+}
+
+@media (min-width: 992px) {
+	#flash-content {
+		width: 80%;
+		height: 600px;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	#flash-content {
+		width: 1280px;
+		height: 720px;
+	}
+}*/
