@@ -77,19 +77,47 @@ li {
     margin-bottom: 30px;
 }
 
-.education-group .section-split-left {
-    width: 20%;
+.education-group {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
 }
+
+.skill-group {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .section-split-left {
     display: inline-block;
     float: left;
-    width: 25%;
-    height: 100px;
+    width: 30%;
 }
 
 .section-split-right {
     display: inline-block;
     float: left;
     width: 50%;
-    height: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .box-text-content {
+        width: 90%;
+    }
+    .section-split-left {
+        width: 50%;
+    }
+    .section-split-right {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section-split-left {
+        width: 20%;
+    }
+    .section-split-right {
+        width: 40%;
+    }
 }
