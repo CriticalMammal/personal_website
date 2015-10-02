@@ -5,7 +5,7 @@ html, body {
 
 #content-area {
 	position: relative;
-	/*width: 80%;*/
+	width: 80%;
 	height: 600px;
 	margin: 0px auto 25px auto;
 	z-index: 5;
@@ -14,15 +14,16 @@ html, body {
 #flash-content {
 	display: inline-block;
 	position: relative;
-	width: 800px;
+	width: 80%;
 	height: 100%;
-	margin: 0px 0px 0px 0px;
+	margin: 0px -3px 0px 0px;
 }
 
 .border-button {
 	display: inline-block;
+	margin-right: -3px;
 	height: 100%;
-	width: 100px;
+	width: 10%;
 }
 
 .border-button:first-child img {
@@ -40,7 +41,7 @@ html, body {
 }
 
 .border-button:first-child {
-	margin-left: 65px;
+	/*margin-left: 65px;*/
 }
 
 #button-left, #button-right {
@@ -56,30 +57,8 @@ html, body {
 	background-color: rgba(255, 253, 230, 0.5);
 }
 
-/*@media screen and (max-width: 767px) {
-	#flash-content{
-		width: 100%;
-		height: 400px;
+@media screen and (max-width: 767px) {
+	#content-area {
+		height: 200px;
 	}
 }
-
-@media screen and (min-width:768px) {
-	#flash-content {
-		width: 80%;
-		height: 600px;
-	}
-}
-
-@media (min-width: 992px) {
-	#flash-content {
-		width: 80%;
-		height: 600px;
-	}
-}
-
-@media screen and (min-width:1200px) {
-	#flash-content {
-		width: 1280px;
-		height: 720px;
-	}
-}*/
