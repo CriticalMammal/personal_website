@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="underwater_data" version="1.3.0" audacityversion="2.0.6" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="219.6970756099" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags/>
+	<wavetrack name="Mix" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="2.48786848">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="61939">
+				<waveblock start="0">
+					<simpleblockfile filename="e000096d.au" len="61939" min="-0.479889" max="0.330902" rms="0.077212"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="2.29405896">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8547">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000e35.au" len="8547" min="-0.096843" max="0.141055" rms="0.015539"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="2.48786848">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="61939">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000404.au" len="61939" min="-0.319122" max="0.252228" rms="0.054228"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="2.29405896">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8547">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000c4e.au" len="8547" min="-0.128054" max="0.123631" rms="0.018243"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="101168">
+				<waveblock start="0">
+					<simpleblockfile filename="e00003a0.au" len="101168" min="-0.449829" max="0.471222" rms="0.111663"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="2.29405896">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8547">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000dd7.au" len="8547" min="-0.239013" max="0.183266" rms="0.02323"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="101168">
+				<waveblock start="0">
+					<simpleblockfile filename="e000094b.au" len="101168" min="-0.233521" max="0.201843" rms="0.058916"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="2.29405896">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8547">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000d3a.au" len="8547" min="-0.162113" max="0.254864" rms="0.019905"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

@@ -34,6 +34,16 @@
 </head>
 
 <body>
+    <!-- audio elements -->
+    <audio id="nav-hover-sound">
+        <source src="audio/nav_hover.wav" type="audio/wav"/>
+    </audio>
+
+    <audio id="mouse-move-sound">
+        <source src="audio/mouseMove.wav" type="audio/wav"/>
+    </audio>
+    
+    <!-- canvas for fancy backgrounds -->
     <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;"/>
     Canvas not supported
     </canvas>
@@ -221,14 +231,13 @@
     </footer>
     </div>
 
-    <!-- jQuery -->
+    <!-- External js -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Background Animation -->
+    <!-- Custom js -->
     <script src="js/backgroundAnimation2.js"></script>
+    <script src="js/audioHandler.js"></script>
 </body>
 
 </html>

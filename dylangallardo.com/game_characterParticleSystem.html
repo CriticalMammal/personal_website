@@ -35,12 +35,21 @@
 </head>
 
 <body>
-    <!-- where do you put audio tags? -->
+    <!-- audio elements -->
+    <audio id="nav-hover-sound">
+        <source src="audio/nav_hover.wav" type="audio/wav"/>
+    </audio>
+
+    <audio id="mouse-move-sound">
+        <source src="audio/mouseMove.wav" type="audio/wav"/>
+    </audio>
+    
     <audio id="flip-sound">
       Your browser does not support the <code>audio</code> element.
       <source src="audio/viewFlip.wav" type="audio/wav">
     </audio>
 
+    <!-- canvas for fancy backgrounds -->
     <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
     Canvas not supported
     </canvas>
@@ -144,23 +153,16 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <!-- <script src="js/jquery.js"></script> -->
-
-    <!-- jQuery -->
+    <!-- External js -->
     <script src="js/jquery.js"></script>
     <script src="js/swfobject.js"></script>
-
-    <!-- JS switches flash content on button click -->
-    <script src="js/flashViewer.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Background Animation -->
+    <!-- Custom js -->
     <!-- <script src="js/backgroundAnimation2.js"></script> -->
-
+    <script src="js/flashViewer.js"></script>
     <script src="js/flipAudio.js"></script>
+    <script src="js/audioHandler.js"></script>
 </body>
 
 </html>
