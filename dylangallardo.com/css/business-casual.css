@@ -241,7 +241,8 @@ hr {
     width:230px;
     height: 140px;
     margin: auto;
-    transition: all 0.2s ease-in-out;
+    transition: padding 0.2s ease-in-out,
+                box-shadow 0.3s ease-in-out;
 }
 
 .image-container:hover {
@@ -382,6 +383,21 @@ hr {
 
 .contact-icons {
     text-align: center;
+}
+
+.contact-icons a {
+    text-decoration: none;
+}
+
+.contact-icons a img {
+    padding: 0px;
+    transition: padding 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+}
+
+.contact-icons a img:hover {
+    padding: 5px;
+    box-shadow: inset 0px 0px 80px rgba(255, 253, 230, 0.2);
 }
 
 .img-contact-icon {

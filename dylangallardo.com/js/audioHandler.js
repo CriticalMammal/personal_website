@@ -20,7 +20,6 @@ if ($("#mouse-move-sound").length > 0) {
       ambientVolume = 0.5;
     }
     ambientAudio.volume = ambientVolume;
-    console.log("working");
   });
 
   window.onblur = function() {
@@ -29,50 +28,37 @@ if ($("#mouse-move-sound").length > 0) {
   };
 }
 
-// Attach sounds to elements
-if ($("#hover-sound").length > 0) {
-  $(".image-container")
-    .each(function(i) {
-      $("#hover-sound")
-        .clone()
-        .css("volume", 0)
-        .attr("id", "hover-sound" + i)
-        .appendTo($(this).parent());
-      
-      $(this).data("beeper", i);
-      $("#hover-sound" + $(this).data("beeper"))[0].volume=1;
+addSoundToAll('.image-container', '#hover-sound', 1);
+addSoundToAll('.navbar-nav li a', '#nav-hover-sound', 0.8);
+addSoundToAll('.img-contact-icon', '#hover-sound', 1);
 
-      i++;
-    })
-    .mouseenter(function() {
-      $("#hover-sound" + $(this).data("beeper"))[0].play();
-    });
 
-  $("#hover-sound").attr("id", "hover-sound");
-}
-if ($("#nav-hover-sound").length > 0) {
+// Adds a sound that will trigger on hover to all
+// elements with this id/class
+function addSoundToAll(element, sound, startVolume) {
   i=0; //reset counter
+  var soundPrefixRemoved = sound.substr(1);
 
-  $(".navbar-nav li a")
-    .each(function(i) {
-      $('#nav-hover-sound')
-        .clone()
-        .css("volume", 0)
-        .attr("id", "nav-hover-sound" + i)
-        .appendTo($(this).parent());
+  // Check if sound and element exist
+  if ($(sound).length > 0 && $(element).length > 0) {
+    $(element)
+      .each(function(i) {
+        $(sound)
+          .clone()
+          .css("volume", 0)
+          .attr("id", soundPrefixRemoved + i)
+          .appendTo($(this).parent());
 
-      $(this).data("beeper", i);
-      $('#nav-hover-sound' + $(this).data("beeper"))[0].volume=0.8;
+        $(this).data("count", i);
+        $(sound + i)[0].volume=0.8;
 
-      i++;
-    })
-    .mouseenter(function() {
-      $('#nav-hover-sound' + $(this).data("beeper"))[0].play();
-    });
-
-  $('nav-hover-sound').attr("id", "nav-hover-sound");
+        i++;
+      })
+      .mouseenter(function() {
+        $(sound + $(this).data("count"))[0].play();
+      });
+  }
 }
-
 
 update();
 
