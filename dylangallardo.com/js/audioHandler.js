@@ -1,6 +1,7 @@
 var i=0;
 var ambientVolume = 0;
 var ambientAudio = null;
+var mouse = {x: null, y: null, oldX: null, oldY: null, movementDist: 0};
 
 if ($("#mouse-move-sound").length > 0) {
   ambientAudio = document.getElementById('mouse-move-sound');
@@ -15,7 +16,22 @@ if ($("#mouse-move-sound").length > 0) {
 
   // Events and listeners
   $(window).mousemove(function(e){
-    ambientVolume += 0.04;
+    // update mouse pos
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    mouse.movementDist = Math.abs(mouse.x-mouse.oldX)+Math.abs(mouse.y-mouse.oldY);
+
+    var volumeModifier = mouse.movementDist/900;
+    // fix for volume being high on initial movement
+    if (mouse.oldX == null) {
+      volumeModifier = 0;
+    }
+
+    mouse.oldX = mouse.x;
+    mouse.oldY = mouse.y;
+
+    // change volume
+    ambientVolume += volumeModifier; //0.04 is a good speed
     if (ambientVolume > 0.5) {
       ambientVolume = 0.5;
     }
@@ -65,7 +81,7 @@ update();
 // main loop
 function update() {
   if (ambientAudio) {
-    ambientVolume -= 0.01;    
+    ambientVolume -= 0.015;    
     if (ambientVolume < 0) {
       ambientVolume = 0;
     }
@@ -73,5 +89,5 @@ function update() {
     ambientAudio.volume = ambientVolume;
   }
 
-  requestAnimFrame(update); // do it all again
+  requestAnimationFrame(update); // do it all again
 }

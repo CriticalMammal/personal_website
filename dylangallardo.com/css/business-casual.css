@@ -31,6 +31,11 @@ h6 {
     color: #FFFDE6;
 }
 
+.portfolio-item {
+    margin: 0px auto 30px auto;
+    width: 80%;
+}
+
 .portfolio-item h5, .homepage-item h2 {
     font-size: 1.3em;
     color: #FFFDE6;
@@ -426,7 +431,13 @@ footer p {
     color: grey;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 560px) {
+    .col-md-3 {
+        display: inline-block;
+        width: 49%;
+    }
+}
+@media (max-width: 767px) {
     .brand-main {
         float: center;
         margin-right: 5pc;
@@ -510,6 +521,10 @@ footer p {
         margin-right: 10pc;
         margin-left: 10pc;
     }
+    .col-md-3 {
+        display: inline-block;
+        width: 49%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -517,6 +532,10 @@ footer p {
         float: center;
         margin-right: 15pc;
         margin-left: 15pc;
+    }
+    .col-md-3 {
+        display: inline-block;
+        width: 25%;
     }
 }
 
