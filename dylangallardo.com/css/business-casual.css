@@ -27,6 +27,11 @@ h6 {
     letter-spacing: 1px;
 }
 
+/* IE fix */
+.container {
+    overflow: hidden;
+}
+
 .page-header {
     color: #FFFDE6;
 }
@@ -207,12 +212,11 @@ hr {
     margin-bottom: 20px;
     padding: 20px 15px;
     background: rgba(144,164,175,0.5);
-    /*box-shadow: 0px 0px 100px 50px rgba(113,142,158,1) inset;*/
     background-image: url("../img/custom-box-background.png");
     background-size: 100% 100%;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;    
+    /*-webkit-transform-style: preserve-3d;*/
+    /*-moz-transform-style: preserve-3d;*/
+    /*transform-style: preserve-3d;*/
 }
 
 .box #video-player, .box .brand-main {
@@ -266,6 +270,8 @@ hr {
     background: rgba(144,164,175,0.5);
     background-image: url("../img/custom-box-background.png");
     background-size: 100% 100%;
+    /*note: preserve-3d (on parent elements) has caused 
+        issues with flash on Firefox and IE*/
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d; 
@@ -422,6 +428,8 @@ hr {
 
 footer {
     background-color: #FFFDE6;
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 footer p {
