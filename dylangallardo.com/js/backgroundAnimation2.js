@@ -96,8 +96,8 @@ function main() {
   // main loop
   function update() {
     // ensure the canvas is the size of the screen
-    canvasContext.canvas.width = window.innerWidth;
-    canvasContext.canvas.height = window.innerHeight;
+    // canvasContext.canvas.width = window.innerWidth;
+    // canvasContext.canvas.height = window.innerHeight;
     
     // update weird object
     softBlock.update();

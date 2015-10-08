@@ -81,7 +81,7 @@ update();
 // main loop
 function update() {
   if (ambientAudio) {
-    ambientVolume -= 0.015;    
+    ambientVolume -= 0.015;
     if (ambientVolume < 0) {
       ambientVolume = 0;
     }

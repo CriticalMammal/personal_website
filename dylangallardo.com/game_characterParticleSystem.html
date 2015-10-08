@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet"/>
+    <!-- <link href="css/3-col-portfolio.css" rel="stylesheet"/> -->
     <link href="css/business-casual.css" rel="stylesheet"/>
     <link href="css/flashViewer.css" rel="stylesheet"/>
 
@@ -37,11 +37,13 @@
 <body>
     <!-- audio elements -->
     <audio id="nav-hover-sound">
+        <source src="audio/nav_hover.mp3" type="audio/mp3"/>
         <source src="audio/nav_hover.wav" type="audio/wav"/>
     </audio>
 
     <audio id="mouse-move-sound">
         <source src="audio/mouseMove.wav" type="audio/wav"/>
+        <source src="audio/mouseMove.mp3" type="audio/mp3"/>
     </audio>
     
     <audio id="flip-sound">
@@ -123,7 +125,31 @@
 
                     <!-- Flash Content -->
                     <div id="flash-content">
-                        <embed src="flash/DGallardo_RunningGirl_Side.swf" align="center" width="100%" height="100%"/>
+                        <!-- <embed src="flash/DGallardo_RunningGirl_Side.swf" align="center" width="100%" height="100%"/> -->
+
+                        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="DGallardo_RunningGirl_Side" align="center">
+                            <param name="movie" value="flash/DGallardo_RunningGirl_Side.swf" />
+                            <!-- <param name="quality" value="low" /> -->
+                            <!-- <param name="bgcolor" value="#ffffff" /> -->
+                            <!-- <param name="play" value="true" /> -->
+                            <!-- <param name="loop" value="true" /> -->
+                            <!-- <param name="allowScriptAccess" value="sameDomain" /> -->
+                            <!--[if !IE]>-->
+                            <object width="100%" height="100%" align="center">
+                                <param name="movie" value="flash/DGallardo_RunningGirl_Side.swf" />
+                                <!-- <param name="quality" value="low" /> -->
+                                <!-- <param name="bgcolor" value="#ffffff" /> -->
+                                <!-- <param name="play" value="true" /> -->
+                                <!-- <param name="loop" value="true" /> -->
+                                <!-- <param name="allowScriptAccess" value="sameDomain" /> -->
+                            <!--<![endif]-->
+                                <a href="http://www.adobe.com/go/getflash">
+                                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                                </a>
+                            <!--[if !IE]>-->
+                            </object>
+                            <!--<![endif]-->
+                        </object>
                     </div>
 
                     <!-- Right button -->

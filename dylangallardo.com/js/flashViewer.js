@@ -58,7 +58,11 @@ buttonRight.addEventListener("click", function() {
 
 
 function changeContent() {
+	// newElement = "<embed src='" + characterList[currentContent] + "' align='center' width='100%' height='100%'>";
+	// $('#flash-content embed').remove();
+	// parent.append(newElement);
+
 	newElement = "<embed src='" + characterList[currentContent] + "' align='center' width='100%' height='100%'>";
-	$('#flash-content embed').remove();
+	$('#flash-content object').remove();
 	parent.append(newElement);
 }
