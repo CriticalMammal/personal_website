@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dylan Gallardo</title>
+    <title>Character Particle System | Dylan Gallardo</title>
 
     <!-- Reset/Framework CSS -->
     <link href="css/normalize.css" rel="stylesheet"/>
@@ -21,10 +21,10 @@
     <link href="css/flashViewer.css" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Play|Audiowide' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'>
 
     <!-- Local Fonts (not really necessary in this case) -->
-    <link href="css/fonts.css" rel="stylesheet"/>
+    <!-- <link href="css/fonts.css" rel="stylesheet"/> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,23 +36,6 @@
 </head>
 
 <body>
-    <!-- audio elements -->
-    <audio id="nav-hover-sound">
-        <source src="audio/nav_hover.mp3" type="audio/mp3"/>
-        <source src="audio/nav_hover.wav" type="audio/wav"/>
-    </audio>
-
-    <audio id="mouse-move-sound">
-        <source src="audio/mouseMove.wav" type="audio/wav"/>
-        <source src="audio/mouseMove.mp3" type="audio/mp3"/>
-    </audio>
-    
-    <audio id="flip-sound">
-      Your browser does not support the <code>audio</code> element.
-      <source src="audio/viewFlip.wav" type="audio/wav"/>
-      <source src="audio/viewFlip.mp3" type="audio/mp3"/>
-    </audio>
-
     <!-- canvas for fancy backgrounds (not included here for performance)-->
 <!--     <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
     Canvas not supported
@@ -60,7 +43,7 @@
 
     <!-- I wrap everything in this div my content appears in front of the canvas -->
     <div style="position:relative; z-index:1;">
-    <div class="brand">DYLAN GALLARDO</div>
+    <div class="brand"><h1>DYLAN GALLARDO</h1></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -114,26 +97,28 @@
                     <p>The characters themselves (the invisible body boundaries being filled with the particles) were animated with Flash motion tweens and whatnot by hand. May be very taxing with some of the more complex scenes.</p><br>
 
                     <p>Link to the short animation "Long Distance" below. Created over the span of about a week, along with modifications to the particle system that were needed for it to perform reasonably.</p>
-                    <p> <a href="DGallardo_RunningGirlAnimation.html">Long Distance</a></p><br>
+                    <p> <a href="runningGirlAnimation.html">Long Distance</a></p><br>
                 </div>
 
                 <!-- FLASH CONTENT VIEWER -->
                 <div id="content-area">
                     <!-- Left button -->
                     <div class="border-button">
-                        <button id="button-left"><img src="img/arrow.png"></img></button>
+                        <button id="button-left"><img src="img/arrow.png" alt="flash viewer button left" width="100%" height="100%"/></button>
                     </div>
 
                     <!-- Flash Content -->
                     <div id="flash-content">
-                        <embed src="flash/DGallardo_RunningGirl_Side.swf" align="center" width="100%" height="100%"/>
+                        <embed id="flash-embed" src="flash/DGallardo_RunningGirl_Side.swf"/>
                     </div>
 
                     <!-- Right button -->
                     <div class="border-button">
-                        <button id="button-right"><img src="img/arrow.png"></img></button>
+                        <button id="button-right"><img src="img/arrow.png" alt="flash viewer button right" width="100%" height="100%"/></button>
                     </div>
                 </div>
+
+                <div class="clearfix"></div>
 
                 <div class="box-dot-pattern"></div>
 
@@ -141,10 +126,10 @@
                     <div class="bottom-left-corner"></div>
                     <div class="bottom-right-corner"></div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
+            </div> <!-- END box -->
+        </div> <!-- END row -->
+    </div> <!-- END container -->
+    </div> <!-- END wrapper div -->
 
     <footer>
         <div class="container">

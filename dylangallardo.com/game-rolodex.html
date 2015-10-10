@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dylan Gallardo</title>
+    <title>Rolodex Project | Dylan Gallardo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +19,10 @@
     <link href="css/business-casual.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Play|Audiowide' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'>
 
     <!-- Local Fonts (not really necessary in this case) -->
-    <link href="css/fonts.css" rel="stylesheet"/>
+    <!-- <link href="css/fonts.css" rel="stylesheet"/> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,17 +34,6 @@
 </head>
 
 <body>
-    <!-- audio elements -->
-    <audio id="nav-hover-sound">
-        <source src="audio/nav_hover.mp3" type="audio/mp3"/>
-        <source src="audio/nav_hover.wav" type="audio/wav"/>
-    </audio>
-
-    <audio id="mouse-move-sound">
-        <source src="audio/mouseMove.wav" type="audio/wav"/>
-        <source src="audio/mouseMove.mp3" type="audio/mp3"/>
-    </audio>
-    
     <!-- canvas for fancy backgrounds -->
     <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
     Canvas not supported
@@ -52,7 +41,7 @@
 
     <!-- I wrap everything in this div my content appears in front of the canvas -->
     <div style="position:relative; z-index:1;">
-    <div class="brand">DYLAN GALLARDO</div>
+    <div class="brand"><h1>DYLAN GALLARDO</h1></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -86,7 +75,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Project_Micro</h1>
+                <h1 class="page-header">Project_Rolodex</h1>
             </div>
         </div>
 
@@ -98,27 +87,26 @@
                     <span class="top-right-corner"></span>
                 </div>
 
-                <img class="img-top-box" src="img/game_micro.gif" alt="projet micro gif">
+                <!-- embedded video-->
+                <center><iframe id="video-player" title="Rolodex Video" style="margin: 0 auto;" src="https://player.vimeo.com/video/112349118" width="500" height="375" style="border:0;" allowfullscreen></iframe></center>
 
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Project Micro</h2>
+                    <h2 class="intro-text text-center">Project Rolodex</h2>
                 </div>
 
                 <div class="brand-main text-center">
-                    <p> <a href="https://github.com/CriticalMammal/ProjectMicro/tree/master/ProjectMicro%20Solution/ProjectMicro">Source Code </a></p>
-                    <p>An experiment with perspective and working tile maps (loading, slicing an img into separate textures). Allows zooming in and out to pretty extreme amounts, and inside each "microchip" is another layer you can take control of and move around. Collision detection is implemented, the hot pink tiles are collidable.</p>
-                    <p> The scaling isn't infinite, after roughly 15 layers the maximum floating point value is reached, and the visuals spaz out. I didn't end up changing that limitation because the idea of having a barrier for the smallest thing that could exist was interesting.</p>
-                    <p> The tile map for the project is below</p>
-
-                    <img src="img/game_micro_tilesheet.bmp" alt="project micro tilesheet">
+                    <p> <a href="https://github.com/CriticalMammal/ProjectNavigator/tree/master/ProjectNavigator">Source Code </a></p>
+                    <p>This project started because I wanted to create the 3d "layered" look it currently has. It's also where the name "Rolodex" came from, since the visuals sort of resemble how a rolodex functions.</p>
+                    <p> It's programmed in C++ with the Simple Direct Media Layer (SDL) library. Midway through development I was planning on turning it into some sort of puzzle game, though those mechanics never made it in because quite a lot of work was spent creating the backbone and core functionality. Most of the functionality is illustrated in the video above. Below is the tile sheet I made for it, free to download for anyone who wants to use it.</p>
+                    <img src="img/game-rolodex-tilesheet.png" alt="rolodex tilesheet">
                 </div>
 
                 <div class="bottom-corners">
                     <div class="bottom-left-corner"></div>
                     <div class="bottom-right-corner"></div>
                 </div>
-                <div class="box-dot-pattern"></div>  
+                <div class="box-dot-pattern"></div>   
             </div>
         </div>
     </div>
