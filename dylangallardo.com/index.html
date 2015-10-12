@@ -9,20 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home | Dylan Gallardo</title>
+    <title>Projects | Dylan Gallardo</title>
 
     <!-- Reset/Framework CSS -->
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet"/>
     <link href="css/business-casual.css" rel="stylesheet"/>
-    <link href="css/eye.css" rel="stylesheet"/>
-    <link href="css/nouislider.css" rel="stylesheet"/>
-    <link href="css/nouislider.pips.css" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'/>
 
     <!-- Local Fonts (not really necessary in this case) -->
     <!-- <link href="css/fonts.css" rel="stylesheet"/> -->
@@ -63,8 +61,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="games.html">Projects</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>
             </div>
@@ -73,91 +71,256 @@
         <!-- /.container -->
     </nav>
 
+    <!-- Page Content -->
     <div class="container">
 
-        <!-- DESCRIPTION INFO BOX -->
+        <!-- Page Header -->
         <div class="row">
-            <div class="box">
-            	<div class="top-corners">
-            		<span class="top-left-corner"></span>
-            		<span class="top-right-corner"></span>
-            	</div>
-                
-                <div class="box-text-content">
-                    <div class="col-lg-12 homepage-item">
-                        <h2 class="intro-text text-center">Info</h2>
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <!-- interactive eye -->
-                    <!-- <div class="eye">
-                        <div class="iris">
-                            <div class="pupil">
-                              <div class="pupil-shine"></div>
-                            </div>
-                        </div>
-                        <div class="lids"></div>
-                    </div> -->
-
-                    <!-- slider and AI textbox -->
-                    <!-- <div id="slider"></div>
-                    <div id="slider-value"></div>
-                    <div id="console"><p></p></div> -->
-
-                    <div class="brand-main text-center">
-                        <p>Developer of interactive digital content. I'm attracted to projects that work with user interaction in creative ways to illustrate narratives and ideas. I put a large emphasis on visual and audio elements to create atmospheric digital spaces.</p>
-                        <p>If you've already seen some of my work you're aware that I primarily develop small video games. I'm a frequent participant in the Ludum Dare game jam.</p>
-                    </div>
-                </div> <!-- END box-text-content -->
-                
-            	<div class="bottom-corners">
-            		<div class="bottom-left-corner"></div>
-            		<div class="bottom-right-corner"></div>
-            	</div>
-                <div class="box-dot-pattern"></div>    
+            <div class="col-lg-12">
+                <h1 class="page-header">Projects</h1>
             </div>
         </div>
 
-        <!-- CONTACT INFO BOX -->
+        <!-- Projects Row -->
         <div class="row">
-            <div class="box">
-            	<div class="top-corners">
-            		<span class="top-left-corner"></span>
-            		<span class="top-right-corner"></span>
-            	</div>
-                <div class="box-text-content">            
-                    <div class="col-lg-12">
-                        <h2 class="intro-text text-center">Contact
-                        </h2>
+            <div class="col-md-3 portfolio-item"> 
+                <a href="http://codepen.io/CriticalMammal/">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-codepen.png" alt="Codepen Page">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
                     </div>
-                    <div class="contact-icons">
-                        <a href="https://twitter.com/CriticalMammal">
-                            <img class="img-contact-icon" src="img/icon-twitter.png" alt="Twitter"/>
-                        </a>
-                        <a href="mailto:gallardodylan42@gmail.com">
-                            <img class="img-contact-icon" src="img/icon-email.png" alt="Email"/>
-                        </a>
-                    </div>
-<!--                     <div class="brand-main text-center">
-                        <p>Email:
-                            <strong><a href="mailto:gallardodylan42@gmail.com">gallardodylan42@gmail.com</a></strong>
-                        </p>
-                        <p>Twitter:
-                            <strong><a href="https://twitter.com/CriticalMammal"> @CriticalMammal</a></strong>
-                        </p>
-                    </div> -->
-                </div>
-            	<div class="top-corners">
-            		<span class="bottom-left-corner"></span>
-            		<span class="bottom-right-corner"></span>
-            	</div>
-                <div class="box-dot-pattern"></div> 
-                <div class="clearfix"></div>
+                </a>
+                <h5>
+                    <span>2015//08//04</span>
+                    <hr>
+                    <a href="http://codepen.io/CriticalMammal/">Codepen</a>
+                </h5>
+                <p>Codepen page. Web-based experiments.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="game-characterParticleSystem.html">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-particle-animation.png" alt="Character Particle System">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2015//06//09</span>
+                    <hr>
+                    <a href="game-characterParticleSystem.html">Particle Characters</a>
+                </h5>
+                <p>A particle system made in Flash, primarily for character designs/animation.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="game-rolodex.html">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-rolodex.png" alt="Rolodex Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2014//11//16</span>
+                    <hr>
+                    <a href="game-rolodex.html">Project Rolodex</a>
+                </h5>
+                <p>This was more of a small game engine I made than a fully fledged game.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&amp;uid=26775">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-silk.png" alt="Silk game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2014//12//08</span>
+                    <hr>
+                    <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&amp;uid=26775">Silk</a>
+                </h5>
+                <p>Created for the Ludum Dare 31 game jam.</p>
             </div>
         </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+
+            <div class="col-md-3 portfolio-item">
+                <a href="http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26775">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-interloper.png" alt="Interloper Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2015//08//24</span>
+                    <hr>
+                    <a href="http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=26775">Interloper</a>
+                </h5>
+                <p>Created for Ludum Dare #33. The game is about microscopic power struggles.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="http://ludumdare.com/compo/ludum-dare-32/?action=preview&amp;uid=26681">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-crowd-control.png" alt="Crowd Control Game">
+                        <div class="image-dot-pattern"></div>
+                        <div class="image-background"></div>
+                    </div>
+                </a>
+                <h5>
+                    <span>2015//04//20</span>
+                    <hr>
+                    <a href="http://ludumdare.com/compo/ludum-dare-32/?action=preview&amp;uid=26681">Crowd Control</a>
+                </h5>
+                <p>Created for the Ludum Dare 32 game jam.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="http://ludumdare.com/compo/ludum-dare-28/?action=preview&amp;uid=26775">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-the-voyage.png" alt="The Voyage Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2013//12//16</span>
+                    <hr>
+                    <a href="http://ludumdare.com/compo/ludum-dare-28/?action=preview&amp;uid=26775">The Voyage</a>
+                </h5>
+                <p>Created for the Ludum Dare 28 game jam.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="http://criticalmammal.itch.io/generations">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-generations.png" alt="Generations Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2014//04//25</span>
+                    <hr>
+                    <a href="http://criticalmammal.itch.io/generations">Generations</a>
+                </h5>
+                <p>A short little experiment about life cycles.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="game-micro.html">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-project-micro.png" alt="Project Micro Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2014//08//21</span>
+                    <hr>
+                    <a href="game-micro.html">Project Micro</a>
+                </h5>
+                <p>An experiment about controlling things on a really, really tiny scale.</p>
+            </div>
+            
+            <div class="col-md-3 portfolio-item">
+                <a href="http://ludumdare.com/compo/ludum-dare-27/?action=preview&amp;uid=26775">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-intensive-care.png" alt="Intensive Care Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2013//08//26</span>
+                    <hr>
+                    <a href="http://ludumdare.com/compo/ludum-dare-27/?action=preview&amp;uid=26775">Intensive Care</a>
+                </h5>
+                <p>Created for the Ludum Dare 27 game jam.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="https://dl.dropboxusercontent.com/u/80401684/Introspective%20game%20build.html">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-missing.png" alt="Introspective Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                    
+                </a>
+                <h5>
+                    <span>2014//01//17</span>
+                    <hr>
+                    <a href="https://dl.dropboxusercontent.com/u/80401684/Introspective%20game%20build.html">Introspective</a>
+                </h5>
+                <p>Primarily audio-based experience.</p>
+            </div>
+
+            <div class="col-md-3 portfolio-item">
+                <a href="game-raindrop.html">
+                    <div class="image-container">
+                        <img class="img-responsive" src="img/icon-raindrop.png" alt="Raindrop Game">
+                        <div class="image-background"></div>
+                        <div class="image-dot-pattern"></div>
+                    </div>                
+                </a>
+                <h5>
+                    <span>2013//08//17</span>
+                    <hr>
+                    <a href="game-raindrop.html">Raindrop</a>
+                </h5>
+                <p>An older flash project.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Page number tabs
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&amp;laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&amp;raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        -->
     </div>
-    <!-- /.container -->
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -169,6 +332,8 @@
     </footer>
     </div>
 
+    <!-- /.container -->
+
     <!-- External js -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -176,11 +341,6 @@
     <!-- Custom js -->
     <script src="js/backgroundAnimation2.js"></script>
     <script src="js/audioHandler.js"></script>
-    <!-- Dynamic Eye -->
-    <!-- <script src="js/eye.js"></script> -->
-    <!-- <script src="js/wNumb.min.js"></script> -->
-    <!-- <script src="js/nouislider.js"></script> -->
-    <!-- <script src="js/console.js"></script> -->
 
 </body>
 

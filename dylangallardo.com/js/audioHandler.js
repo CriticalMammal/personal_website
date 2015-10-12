@@ -47,7 +47,7 @@ if ($("#mouse-move-sound").length > 0) {
     mouse.oldY = mouse.y;
 
     // change volume
-    ambientVolume += 0.04; //0.04 is a good speed
+    ambientVolume += volumeModifier; //0.04 is a good speed
     if (ambientVolume > 0.5) {
       ambientVolume = 0.5;
     }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home | Dylan Gallardo</title>
+
+    <!-- Reset/Framework CSS -->
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet"/>
+    <!-- <link href="css/eye.css" rel="stylesheet"/> -->
+    <!-- <link href="css/nouislider.css" rel="stylesheet"/> -->
+    <!-- <link href="css/nouislider.pips.css" rel="stylesheet"/> -->
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'>
+
+    <!-- Local Fonts (not really necessary in this case) -->
+    <!-- <link href="css/fonts.css" rel="stylesheet"/> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- canvas for fancy backgrounds -->
+    <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
+    Canvas not supported
+    </canvas>
+
+    <!-- I wrap everything in this div my content appears in front of the canvas -->
+    <div style="position:relative; z-index:1;">
+    <div class="brand"><h1>DYLAN GALLARDO</h1></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Dylan Gallardo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <!-- DESCRIPTION INFO BOX -->
+        <div class="row">
+            <div class="box">
+            	<div class="top-corners">
+            		<span class="top-left-corner"></span>
+            		<span class="top-right-corner"></span>
+            	</div>
+                
+                <div class="box-text-content">
+                    <div class="col-lg-12 homepage-item">
+                        <h2 class="intro-text text-center">Info</h2>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <!-- interactive eye -->
+                    <!-- <div class="eye">
+                        <div class="iris">
+                            <div class="pupil">
+                              <div class="pupil-shine"></div>
+                            </div>
+                        </div>
+                        <div class="lids"></div>
+                    </div> -->
+
+                    <!-- slider and AI textbox -->
+                    <!-- <div id="slider"></div>
+                    <div id="slider-value"></div>
+                    <div id="console"><p></p></div> -->
+
+                    <div class="brand-main text-center">
+                        <p>Developer of interactive digital content. I'm attracted to projects that work with user interaction in creative ways to illustrate narratives and ideas. I put a large emphasis on visual and audio elements to create atmospheric digital spaces.</p>
+                        <p>If you've already seen some of my work you're aware that I primarily develop small video games. I'm a frequent participant in the Ludum Dare game jam.</p>
+                    </div>
+                </div> <!-- END box-text-content -->
+                
+            	<div class="bottom-corners">
+            		<div class="bottom-left-corner"></div>
+            		<div class="bottom-right-corner"></div>
+            	</div>
+                <div class="box-dot-pattern"></div>    
+            </div>
+        </div>
+
+        <!-- CONTACT INFO BOX -->
+        <div class="row">
+            <div class="box">
+            	<div class="top-corners">
+            		<span class="top-left-corner"></span>
+            		<span class="top-right-corner"></span>
+            	</div>
+                <div class="box-text-content">            
+                    <div class="col-lg-12">
+                        <h2 class="intro-text text-center">Contact
+                        </h2>
+                    </div>
+                    <div class="contact-icons">
+                        <a href="https://twitter.com/CriticalMammal">
+                            <img class="img-contact-icon" src="img/icon-twitter.png" alt="Twitter"/>
+                        </a>
+                        <a href="mailto:gallardodylan42@gmail.com">
+                            <img class="img-contact-icon" src="img/icon-email.png" alt="Email"/>
+                        </a>
+                    </div>
+<!--                     <div class="brand-main text-center">
+                        <p>Email:
+                            <strong><a href="mailto:gallardodylan42@gmail.com">gallardodylan42@gmail.com</a></strong>
+                        </p>
+                        <p>Twitter:
+                            <strong><a href="https://twitter.com/CriticalMammal"> @CriticalMammal</a></strong>
+                        </p>
+                    </div> -->
+                </div>
+            	<div class="top-corners">
+            		<span class="bottom-left-corner"></span>
+            		<span class="bottom-right-corner"></span>
+            	</div>
+                <div class="box-dot-pattern"></div> 
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Dylan Gallardo 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- External js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/backgroundAnimation2.js"></script>
+    <script src="js/audioHandler.js"></script>
+    <!-- Dynamic Eye -->
+    <!-- <script src="js/eye.js"></script> -->
+    <!-- <script src="js/wNumb.min.js"></script> -->
+    <!-- <script src="js/nouislider.js"></script> -->
+    <!-- <script src="js/console.js"></script> -->
+
+</body>
+
+</html>
