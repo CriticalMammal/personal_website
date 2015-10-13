@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Codepen | Dylan Gallardo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet"/>
+    <link href="css/business-casual.css" rel="stylesheet"/>
+    <link href="css/project-page.css" rel="stylesheet"/>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Play%7CAudiowide' rel='stylesheet' type='text/css'>
+
+    <!-- Local Fonts (not really necessary in this case) -->
+    <!-- <link href="css/fonts.css" rel="stylesheet"/> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- canvas for fancy backgrounds -->
+    <canvas id="canvas" width="1600" height="775" style="position:fixed; top:0; left:0;">
+    Canvas not supported
+    </canvas>
+
+    <!-- I wrap everything in this div my content appears in front of the canvas -->
+    <div style="position:relative; z-index:1;">
+    <div class="brand"><h1>DYLAN GALLARDO</h1></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Dylan Gallardo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Codepen</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="box">
+                <div class="top-corners">
+                    <span class="top-left-corner"></span>
+                    <span class="top-right-corner"></span>
+                </div>
+
+                <!-- <img class="img-top-box" src="img/game_micro.gif" alt="projet micro gif"> -->
+
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Codepen</h2>
+                </div>
+
+                <div class="brand-main text-center">
+                    <p> <a href="http://codepen.io/CriticalMammal/">Main Codepen Profile</a></p>
+                    <p>My Codepen.io profile page. Contains a couple of web oriented experiments. There were two main pens that gained some attention.</p>
+
+                    <hr>
+                    
+                    <div id="codepen-embed">
+                        <p data-height="361" data-theme-id="19964" data-slug-hash="LpRXOW" data-default-tab="result" data-user="CriticalMammal" class='codepen'>See the Pen <a href='http://codepen.io/CriticalMammal/pen/LpRXOW/'>Dynamic Eye</a> by Dylan Gallardo (<a href='http://codepen.io/CriticalMammal'>@CriticalMammal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+
+                    <p>The "Dynamic Eye", was an exercise to learn javascript and to create something interactive. I wanted something that seemed to have a mind of its own and would act semi-independently when there wasn't any user input. There was actually a fair amount of research involved with how a real eye moves in order to achieve something that seemed somewhat realistic and had character. Most of the movement timing is fairly accurate, down to the milliseconds.</p>
+
+                    <hr>
+
+                    <div id="codepen-embed">
+                        <p data-height="335" data-theme-id="19964" data-slug-hash="QbzdyM" data-default-tab="result" data-user="CriticalMammal" class='codepen'>See the Pen <a href='http://codepen.io/CriticalMammal/pen/QbzdyM/'>Beautiful Physics Bug</a> by Dylan Gallardo (<a href='http://codepen.io/CriticalMammal'>@CriticalMammal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <p>Look familiar? I used a modified version of "Beautiful Physics Bug" for this website's background. I was trying to implement softbody "jelly" physics as a follow up for my javascript experiments. I ended up pursuing all the branching failures I was experiencing and ended up with a lot of visually interesting broken versions.</p>
+                </div>
+
+                <div class="bottom-corners">
+                    <div class="bottom-left-corner"></div>
+                    <div class="bottom-right-corner"></div>
+                </div>
+                <div class="box-dot-pattern"></div>  
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Dylan Gallardo 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- External js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/backgroundAnimation2.js"></script>
+    <script src="js/audioHandler.js"></script>
+</body>
+
+</html>
