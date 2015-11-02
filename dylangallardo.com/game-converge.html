@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rolodex Project | Dylan Gallardo</title>
+    <title>Converge | Dylan Gallardo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Project_Rolodex</h1>
+                <h1 class="page-header">Converge</h1>
             </div>
         </div>
 
@@ -88,22 +88,32 @@
                 </div>
 
                 <!-- embedded video-->
-                <center><iframe id="video-player" title="Rolodex Video" style="margin: 0 auto;" src="https://player.vimeo.com/video/112349118" width="500" height="375" style="border:0;" allowfullscreen></iframe></center>
+                <center><iframe id="video-player" title="Converge Video" style="margin: 0 auto;" src="https://player.vimeo.com/video/144303308" width="500" height="375" style="border:0;" allowfullscreen></iframe></center>
 
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Project Rolodex</h2>
+                    <h2 class="intro-text text-center">Converge</h2>
                 </div>
 
                 <div class="brand-main text-center">
-                    <p> <a href="https://github.com/CriticalMammal/ProjectNavigator/tree/master/ProjectNavigator">Source Code </a></p>
-                    <p>Essentially a psuedo 3d game engine rather than a game itself. It's programmed nearly from scratch in C++ using the Simple Direct Media Layer (SDL) library which handles some of the lower level functionality (creating a window, getting keyboard input, loading images etc.)</p>
-                    <p> This project started because I wanted to create the 3d "layered" look it currently has. It's also where the name "Rolodex" came from, since the visuals sort of resemble how a rolodex functions. Midway through development I was planning on turning it into some sort of puzzle game, though those mechanics never made it in because quite a lot of work was spent creating the backbone and core functionality. Most of the functionality and map editor tools are illustrated in the video above.</p>
-                    <hr>
-                    <img class="img-game-wip" src="img/game_micro.gif" alt="Project Micro tech Experiment"/>
-                    <span class="game-wip-description">Project Micro led to the development of Rolodex.</span>
+                    <p>
+                        <a href="https://dl.dropboxusercontent.com/u/80401684/Converge%20Builds/Converge_Windows.zip">Windows</a> |
+                        <a href="https://dl.dropboxusercontent.com/u/80401684/Converge%20Builds/Converge_OSX.zip">OSX (Untested)</a> | 
+                        <a href="https://dl.dropboxusercontent.com/u/80401684/Converge%20Builds/Converge_Linux.zip">Linux (Untested)</a>
+                    </p>
 
-                    <p>Project Micro was a tech experiment that laid the foundation for Rolodex. Also created using C++ and the SDL library. An experiment with scale and tile maps (loading, slicing an img into separate textures), file IO for saving each randomly generated map. Allows zooming in and out to pretty extreme amounts, and inside each "microchip" is another layer you can take control of and move around. Collision detection is implemented, the hot pink tiles were collidable. I also started playing with using smoother detached "cameras" that follow characters.</p>
+                    <p><u>Controls:</u> Controller compatible: Tap 'A' or 'Spacebar' to jump. Hold to draw path. Hold again to save and end a path. WASD or Joystick to move. 
+                    </p>
+                    <p>Explore a mysterious land as a jumping cube. See the ghostly trails of previous explorers, and ponder your place in the world.</p>
+                    <hr>
+                    <p>Converge was created in 48 hours for Charleston's first game jam! My part in the project was programming and audio design. <a href="https://tim.artstation.com/">Tim Kaminski</a> worked on the art and level design for the game. This was my first completed Unity 3D game. </p>
+                    <p>We spent about 4.5 hours conceptualizing the game initially, and settled vaguely on the cube jumping mechanics and having a recording feature in the game. A lot of time on my end was spent figuring out how to record player paths and get the trail renderer to load and re-trace those from a saved external file. All the glowing trails you see in the game were recorded and saved by previous players. The sound was pulled from raw data files (windows system .dll files and some .psd photoshop files) imported into <a href="http://audacityteam.org/">Audacity</a> that I filtered, normalized and added reverb to. Tim and I met back up near the end of the jam (final 2 hours) and merged his (awesome) art and my assets together to finish the jam.</p>
+                    <img class="img-game-wip" src="img/ConvergePrototype.png" alt="Converge prototype progress"/>
+                    <span class="game-wip-description">A wip shot of the game in the early stage (first day)</span>
+                    <p>This shows off an early path recording. The path is stored as a list of serializable Vector3's. From there, a line is drawn from point to point, which displays all the nuances.</p>
+                    <img class="img-game-wip" src="img/converge-prototype-stairs.png" alt="Converge prototype stairs"/>
+                    <span class="game-wip-description">A wip shot testing the stair-building mechanics.</span>
+                    <p>At this stage the paths had the trails properly following and looking nicer. I was testing the stair-building mechanics in which you can build platforms so that you can reach higher ground. There were far too many of them and they would spawn rotated in this version, though it was a visually interesting part of the prototyping process.</p>
                 </div>
 
                 <div class="bottom-corners">

@@ -392,6 +392,22 @@ hr {
     margin: 0 auto;
 }
 
+.img-game-wip {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    margin: 30px auto 0px auto;
+}
+
+.game-wip-description {
+    display: block;
+    color: #FFFDE6;
+    width: 100%;
+    z-index: 5;
+    margin-bottom: 30px;
+}
+
 .contact-icons {
     text-align: center;
 }

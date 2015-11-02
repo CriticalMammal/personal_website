@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rolodex Project | Dylan Gallardo</title>
+    <title>Project Corridor (Working Title) | Dylan Gallardo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Project_Rolodex</h1>
+                <h1 class="page-header">Project Corridor (Working Title)</h1>
             </div>
         </div>
 
@@ -88,22 +88,24 @@
                 </div>
 
                 <!-- embedded video-->
-                <center><iframe id="video-player" title="Rolodex Video" style="margin: 0 auto;" src="https://player.vimeo.com/video/112349118" width="500" height="375" style="border:0;" allowfullscreen></iframe></center>
+                <center><iframe id="video-player" title="Corridor_Prototype FPS Video" style="margin: 0 auto;" src="https://player.vimeo.com/video/144286568" width="500" height="375" style="border:0;" allowfullscreen></iframe></center>
 
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Project Rolodex</h2>
+                    <h2 class="intro-text text-center">Project Corridor</h2>
                 </div>
 
                 <div class="brand-main text-center">
-                    <p> <a href="https://github.com/CriticalMammal/ProjectNavigator/tree/master/ProjectNavigator">Source Code </a></p>
-                    <p>Essentially a psuedo 3d game engine rather than a game itself. It's programmed nearly from scratch in C++ using the Simple Direct Media Layer (SDL) library which handles some of the lower level functionality (creating a window, getting keyboard input, loading images etc.)</p>
-                    <p> This project started because I wanted to create the 3d "layered" look it currently has. It's also where the name "Rolodex" came from, since the visuals sort of resemble how a rolodex functions. Midway through development I was planning on turning it into some sort of puzzle game, though those mechanics never made it in because quite a lot of work was spent creating the backbone and core functionality. Most of the functionality and map editor tools are illustrated in the video above.</p>
-                    <hr>
-                    <img class="img-game-wip" src="img/game_micro.gif" alt="Project Micro tech Experiment"/>
-                    <span class="game-wip-description">Project Micro led to the development of Rolodex.</span>
+                    <p>
+                        <a href="https://dl.dropboxusercontent.com/u/80401684/Corridor%20Builds/Corridor_Project.zip">Windows</a>
+                    </p>
 
-                    <p>Project Micro was a tech experiment that laid the foundation for Rolodex. Also created using C++ and the SDL library. An experiment with scale and tile maps (loading, slicing an img into separate textures), file IO for saving each randomly generated map. Allows zooming in and out to pretty extreme amounts, and inside each "microchip" is another layer you can take control of and move around. Collision detection is implemented, the hot pink tiles were collidable. I also started playing with using smoother detached "cameras" that follow characters.</p>
+                    <p>A First Person Shooter, still in early prototyping stages. The goal of the project is to create a smooth flowing shooter, with a large focus on movement and gun mechanics.</p>
+                    <p>The video shows the 5th day of progress on the prototype. You can walk, sprint, crouch and jump. The gunplay has bullets that ricochet (not realistically) and the gun is a physical object in the environment, which means that you can push it into walls or other collidable objects.</p>
+                    
+                    <img class="img-game-wip" src="img/corridor-bullet-raycast.png" alt="Corridor bullet raycasting"/>
+                    <span class="game-wip-description">Displaying the raycasts for the bullet ricochets and collisions</span>
+                    <p>The bullets were one of the most interesting challenges so far. Unity's built in collision detection can't handle extremely fast moving objects moving through colliders. They move so fast it won't trigger the collision, so I had to roll my own solution which involved raycasting between the bullet's previous pos and the new pos to check for collisions. If I get a collision, I move the bullet back against the collided object and calculate the reflection angle/velocity.</p>
                 </div>
 
                 <div class="bottom-corners">
